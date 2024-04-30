@@ -1,0 +1,26 @@
+.cabeca{
+    background-color: black;
+    color: beige;
+    text-align: center;
+    border-bottom-style: dotted;
+    border-bottom: 4px;
+    border-color: white;
+}
+body{
+    background-color: gainsboro;
+}
+main{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+a:link {
+    font-style: italic;
+    color: blueviolet;
+}
+
+a:hover {
+    font-style: italic;
+    color: wheat;
+}

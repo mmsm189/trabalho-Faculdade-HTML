@@ -3,7 +3,8 @@
 <head>
     <title>USANDO CSS.</title>
     <style type="text/css">
-        h1 {font-family: Times New Roman;
+        h1 {
+            font-family: Times New Roman;
             font-size: "90%";
             color: blue;
             text-decoration: underline;
@@ -11,22 +12,34 @@
             border-width: 3px;
             border-style: double;
             background-color: yellow;
-            fitalica:font-style italic;
-            }
+            fitalica: font-style italic;
+        }
 
-            ftam1 {
-                font-size: 140%;
-                color:green;
-            }
+        ftam1 {
+            font-size: 140%;
+            color: green;
+        }
 
-            ftam2 {
-                font-size: 170%;
-                font-style: italic;
-                color: navy;
-            }
+        ftam2 {
+            font-size: 170%;
+            font-style: italic;
+            color: navy;
+        }
 
-            ftipolmpVermelho{ font-family: Impact; color: red;
-            }
+        ftipolmpVermelho {
+            font-family: Impact;
+            color: red;
+        }
+
+        a:link {
+            font-style: italic;
+            color: yellow;
+        }
+
+        a:hover {
+            font-style: italic;
+            color: wheat;
+        }
     </style>
 </head>
 
@@ -36,8 +49,14 @@
         <li><span class="fitalica">Usando a TAG SPAN</span>. Então,
             <span class="ftam1"> podemos manipular trechos do que escrevemos usado SPAN. </span>
         </li>
-        <li><span class="ftipolmpVermelho">Criamos uma classe chamada ftipolmpVermelho</span>, <span class="ftam2"> e
-                estamos utilizando em qualquer lugar do HTML </span></li>
+        <li>
+            <span class="ftipolmpVermelho">Criamos uma classe chamada ftipolmpVermelho</span>, <span class="ftam2"> e
+                estamos utilizando em qualquer lugar do HTML </span>
+        </li>
+    </ul>
+    <p>
+        <a href="index.html">INDEX</a>
+    </p>
 </body>
 
 </html>
