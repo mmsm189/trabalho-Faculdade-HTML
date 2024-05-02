@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+}
+
+a {
+    font-style: normal;
+    text-decoration-line: none;
+    color: black;
+}
+
+div#Linkcard:hover {
+    box-shadow: 0px 0px 25px 0px black;
+    cursor: pointer;
+}
+
+img#Banner {
+    margin-top: 5rem;
+    width: 100%;
+    max-height: 450px;
+    box-shadow: 0px 0px 30px 0px black;
+}

@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerrado</title>
-    <link href="../BootStrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
     <style>
-
+        .carousel-item img {
+            height: 525px;
+            min-width: 100%;
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>
 
-<body style="background-color: rgb(233, 233, 233);">
+<body>
 
     <nav class="navbar fixed-top navbar-expand-lg  navbar-light"
-        style="border-bottom: solid 3px black; background-color: white;">
+        style=" background-color: white;">
         <a class="navbar-brand" href="index.html">
             <img src="../recursos/midia/logo_cerrado.png" width="70" height="70" class="d-inline-block align-center"
                 alt="">
@@ -23,12 +29,35 @@
 
         <div class="collapse navbar-collapse">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Sobre</a>
-                <a class="nav-item nav-link" href="#">Participantes</a>
+                <a class="nav-item nav-link active" href="#sobre">Sobre</a>
+                <a class="nav-item nav-link" href="participantes.html">Participantes</a>
             </div>
     </nav>
 
-    <div class="container mt-4" >
+    <img id="Banner" src="../recursos/midia/paisagens/bannerCerrado.jpg" alt="">
+
+
+    <div id="sobre" class="jumbotron jumbotron-fluid" style=" padding: 50px;">
+        <div class="container">
+            <h1  class="display-1">Sobre</h1>
+            <p class="lead">No coração do Brasil, encontra-se um dos ecossistemas mais ricos e
+                diversos do mundo: o Cerrado. Conhecido por sua vasta extensão territorial e sua incrível
+                biodiversidade, o Cerrado abriga uma miríade de espécies vegetais e animais únicas, adaptadas às suas
+                condições climáticas e ambientais específicas. Dos majestosos tamanduás-bandeira aos ágeis lobos-guará,
+                passando pelos icônicos tucanos e pelas seriemas cantantes, o Cerrado abriga uma variedade de espécies
+                que fascinam e encantam.
+                <br>
+                <br>
+                Nossa missão aqui é apresentar a você a riqueza dos animais do Cerrado e a biodiversidade que o
+                caracteriza. Além de destacar a fauna, também nos propomos a explorar os diferentes habitats do Cerrado,
+                desde as vastas savanas até as matas ciliares e os campos rupestres. Cada ambiente abriga uma variedade
+                única de vida, adaptada às condições específicas de solo, clima e topografia. Junte-se a nós nesta
+                jornada de descoberta e conservação do Cerrado!
+            </p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
         <div class="row mb-4">
             <div class="col-md-12" style="margin-top: 5rem;">
                 <h2>Institutos de Preservação</h2>
@@ -37,49 +66,70 @@
         </div>
         <div class="row mb-4">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../recursos/midia/institutos/instituto-onca-pintada.webp" class="card-img-top"
-                        alt="Instituto de Preservação">
-                    <div class="card-body">
-                        <h5 class="card-title">Instituto onça pintada</h5>
-                        <p class="card-text">
-                            O Instituto Onça-Pintada (IOP) é uma ONG sem fins lucrativos dedicada à conservação da onça-pintada. Realiza pesquisa nos biomas onde ela vive (Amazônia, Cerrado, Caatinga, Pantanal e Mata Atlântica) e mantém um criadouro conservacionista. Contribua para nosso trabalho de conservação!</p>
+                <a target="_blank" href="https://jaguars.org/">
+                    <div id="Linkcard" class="card">
+                        <img src="../recursos/midia/institutos/instituto-onca-pintada.webp" class="card-img-top"
+                            alt="Instituto de Preservação">
+                        <div class="card-body">
+                            <h5 class="card-title">Instituto onça pintada</h5>
+                            <p class="card-text">
+                                O Instituto Onça-Pintada (IOP) é uma ONG sem fins lucrativos dedicada à conservação da
+                                onça-pintada. Realiza pesquisa nos biomas onde ela vive (Amazônia, Cerrado, Caatinga,
+                                Pantanal e Mata Atlântica) e mantém um criadouro conservacionista. Contribua para nosso
+                                trabalho de conservação!
+                            </p>
 
+                        </div>
                     </div>
-                    <a target="_blank" href="https://jaguars.org/" class="btn btn-outline-dark">ir para o site</a>
-                </div>
+                </a>
+
             </div>
 
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../recursos/midia/institutos/institutos cerrados.png" class="card-img-top"
-                        alt="Instituto ABC">
-                    <div class="card-body">
-                        <h5 class="card-title">Instituto Cerrados</h5>
-                        <p class="card-text">O Instituto Cerrados é uma Organização da Sociedade Civil, fundada em 2011,
-                            com foco na conservação do bioma Cerrado e comprometida com resultados concretos. Com sede
-                            em Brasília, investimos esforços para consolidação de territórios protegidos, sustentáveis e
-                            produtivos.</p>
+                <a target="_blank" href="https://www.cerrados.org/">
+                    <div id="Linkcard" class="card">
+                        <img src="../recursos/midia/institutos/institutos cerrados.png" class="card-img-top"
+                            alt="Instituto ABC">
+                        <div class="card-body">
+                            <h5 class="card-title">Instituto Cerrados</h5>
+                            <p class="card-text">O Instituto Cerrados é uma Organização da Sociedade Civil, fundada em
+                                2011,
+                                com foco na conservação do bioma Cerrado e comprometida com resultados concretos. Com
+                                sede
+                                em Brasília, investimos esforços para consolidação de territórios protegidos,
+                                sustentáveis e
+                                produtivos.</p>
 
+                        </div>
                     </div>
-                    <a target="_blank" href="https://www.cerrados.org/" class="btn btn-outline-dark">ir para o site</a>
-                </div>
+                </a>
+
             </div>
 
             <div class="col-md-4">
-                <div class="card">
-                    <img src="../recursos/midia/institutos/saveCerrado.png" class="card-img-top" alt="Instituto 123">
-                    <div class="card-body">
-                        <h5 class="card-title"> SaveCerrado</h5>
-                        <p class="card-text">
-                            A missão da SaveCerrado é impulsionar iniciativas para recuperar e proteger o Cerrado, incentivando o uso sustentável de seus recursos e fortalecendo uma economia colaborativa com as comunidades locais. Estamos comprometidos com a preservação desse importante bioma e com o bem-estar das pessoas que dependem dele.</p>
+                <a target="_blank" href="https://www.savecerrado.org/">
+                    <div id="Linkcard" class="card">
+                        <img src="../recursos/midia/institutos/saveCerrado.png" class="card-img-top"
+                            alt="Instituto 123">
+                        <div class="card-body">
+                            <h5 class="card-title"> SaveCerrado</h5>
+                            <p class="card-text">
+                                A missão da SaveCerrado é impulsionar iniciativas para recuperar e proteger o Cerrado,
+                                incentivando o uso sustentável de seus recursos e fortalecendo uma economia colaborativa
+                                com
+                                as comunidades locais. Estamos comprometidos com a preservação desse importante bioma e
+                                com
+                                o bem-estar das pessoas que dependem dele.
+                            </p>
 
+                        </div>
                     </div>
-                    <a target="_blank" href="https://www.savecerrado.org/" class="btn btn-outline-dark">ir para o
-                        site</a>
-                </div>
+                </a>
             </div>
+
+
         </div>
+    </div>
     </div>
     <div class="container mt-4">
         <div class="row mb-4">
@@ -187,17 +237,18 @@
         </div>
 
         <div class="text-center">
-            <a href="#" class="btn btn-outline-dark my-4">Ver Mais Natureza</a>
+            <a href="natureza.html" class="btn btn-outline-dark my-4">Ver Mais Natureza</a>
         </div>
 
     </div>
 
     <footer class="footer bg-dark text-light text-center py-3">
         <div class="container">
-            <span>&copy; 2024 Animais do Cerrado</span>
+            <span>&copy; 2024 Cerrado</span>
         </div>
     </footer>
 
 </body>
+
 
 </html>
