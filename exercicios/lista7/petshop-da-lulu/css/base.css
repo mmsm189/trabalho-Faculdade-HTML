@@ -1,4 +1,8 @@
-body{
-    background-color: burlywood;
-    font-family: link("D:\html\exercicios\petshop-da-lulu\fonts\catFont\Cat Comic.ttf");
-}
+.section {
+    margin-top: 50px;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+  }
+  
